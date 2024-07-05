@@ -1,0 +1,56 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.mobile{
+  width: 1300px;
+  margin: 0 auto;
+  
+}
+img{
+  max-width: 100%;
+  border-radius: 15px;
+}
+.button{
+  background-color:  #2D697C;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+
+}
+.card{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border-bottom:1px solid #ddd;
+  padding: 3rem 0;
+  align-items: center;
+}
+.mobile h1{
+  font-size: 3rem;
+}
+  .card:first-child{
+    display: block;
+  
+    
+  }
+  p:not(:has(a)){
+    display: none;
+  }
+  .card h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  img{
+    grid-area: 1/2/3/3;
+  }
+  p{
+    
+  }
