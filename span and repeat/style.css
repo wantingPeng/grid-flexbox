@@ -1,0 +1,31 @@
+body{
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family:"Libre Franklin", sans-serif;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+img{
+  max-width: 100%;
+}
+figure:first-child{
+grid-column: 2/span 1;
+
+}
+figure{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+ 
+}
+figure:nth-child(3){
+  grid-column: 1/span 1;
+  grid-row: 1/span 3;
+display: block;
+}
+figure:last-child{
+  grid-column: 1/span 2;
+}
