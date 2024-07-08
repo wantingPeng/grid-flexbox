@@ -1,0 +1,60 @@
+*, *:before, *:after {
+  box-sizing:border-box ;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0;
+  border: 2px solid red;
+  max-width: 1200px;
+  padding: 2rem;
+}
+img{
+  
+  max-width: 100%;
+}
+.container{
+  display: flex;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+a{
+  background-color: #2d697c;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+.card{
+  border: 1px solid gray;
+}
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    column-gap: 2%;
+    row-gap: 4rem;
+    align-items: flex-end;
+  }
+ 
+    .card {
+      flex-basis: 30%;
+    
+  }
+}
+@media (min-width: 850px) {
+  .container {
+    justify-content: flex-start;
+    /* align-items: flex-end; */
+    gap: 2%;
+  }
+  /* 100% - (4 gaps, 2% per gap) = 92%
+  92% / 5 images = 18.4% per image */
+  .card {
+    flex-basis: 18.4%;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item q1">
+      
+          <p>2</p>
+          <p>222222</p>
+          <p>2</p> 
+          <p>22222222</p>
+          <p>2</p>
+        </div>
+      
+      <div class="item q2" >
+        
+          <p>2</p>
+          <p>2</p>
+          <p>2</p> 
+        <!--   <p>2</p> -->
+        </div>
+      
+      <div class="item q3">
+     
+          <p>2</p>
+          <p>2</p>
+          <p>2</p>
+         <!--  <p>2</p> 
+          <p>2</p> -->
+        </div>
+      
+      <div class="item q4">
+        
+          <p>2</p>
+         <!--  <p>2</p>
+          <p>2</p> 
+          <p>2</p> -->
+        </div>
+      </div>
+ 
+    <style>
+.grid {
+  border:5px solid rgb(11, 243, 30);
+  background-color: bisque;
+  width: 700px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: .1fr 1fr;
+}
+
+ .item {
+  
+  display: grid;
+
+ 
+ grid-row: span 3;  
+/* grid-column:span 4; */
+  grid-template-rows: subgrid; 
+} 
+  
+
+.q1{background-color: brown;
+
+}
+.q2{
+  background-color:blue
+}
+.q3{background-color:aquamarine;}
+.q4{background-color:black;}
+p{
+  border: 2px solid yellow;
+}
+    </style>
+  </body>
+  </html>
